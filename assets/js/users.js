@@ -401,24 +401,24 @@ function modifyUser(id, btn) {
       <div class="col-md-4"> 
          <h4>Identifier</h4>
         
-        <div class="usernameResult"><strong>Username:</strong> <span><input class="editUser" type="text" value="${userSelected.username}" ></span> </div>
-        <div class="emailResult"><strong>Email:</strong> <span><input class="editUser" type="text" value="${userSelected.email}"></span> </div>
+        <div class="usernameResult"><strong>Username:</strong> <span><input id="username${userSelected.id}" class="editUser" type="text" value="${userSelected.username}" ></span> </div>
+        <div class="emailResult"><strong>Email:</strong> <span><input id="email${userSelected.id}" class="editUser" type="text" value="${userSelected.email}"></span> </div>
     </div>
     <div class="col-md-4">
         <div class="addressResult"> <h4>Address</h4>
-            <div class="streetResult"><strong>Street:</strong> <span><input class="editUser" type="text" value="${userSelected.address.street}"></span> </div>
-            <div class="suiteResult"><strong>Suite:</strong> <span><input class="editUser" type="text" value="${userSelected.address.suite}"></span> </div>
-            <div class="cityResult"><strong>City:</strong> <span><input class="editUser" type="text" value="${userSelected.address.city}"></span> </div>
-            <div class=">zipcodeResult"><strong>Zip:</strong> <span><input class="editUser" type="text" value="${userSelected.address.zipcode}"></span> </div>
-            <div class="phoneResult"><strong>Phone:</strong> <span><input class="editUser" type="text" value="${userSelected.phone}"></span> </div>
-        <div class="websiteResult"><strong>Website:</strong><span> <input class="editUser" type="text" value="${userSelected.website}"></span></div>
+            <div class="streetResult"><strong>Street:</strong> <span><input id="street${userSelected.id}" class="editUser" type="text" value="${userSelected.address.street}"></span> </div>
+            <div class="suiteResult"><strong>Suite:</strong> <span><input id="suite${userSelected.id}" class="editUser" type="text" value="${userSelected.address.suite}"></span> </div>
+            <div class="cityResult"><strong>City:</strong> <span><input id="city${userSelected.id}" class="editUser" type="text" value="${userSelected.address.city}"></span> </div>
+            <div class=">zipcodeResult"><strong>Zip:</strong> <span><input id="zipcode${userSelected.id}" class="editUser" type="text" value="${userSelected.address.zipcode}"></span> </div>
+            <div class="phoneResult"><strong>Phone:</strong> <span><input id="phone${userSelected.id}" class="editUser" type="text" value="${userSelected.phone}"></span> </div>
+        <div class="websiteResult"><strong>Website:</strong><span> <input id="website${userSelected.id}" class="editUser" type="text" value="${userSelected.website}"></span></div>
              </div>
     </div>
     <div class="col-md-4">
         <div class="CompanyResult"> <h4>Company</h4>
-            <div class="nameCompanyResult"><strong>Name:</strong> <span><input class="editUser" type="text" value="${userSelected.company.name}"></span> </div>
-            <div class="catchPhraseResult"><strong>CatchPhrase:</strong> <span><input class="editUser" type="text" value="${userSelected.company.catchPhrase}"></span></div>
-            <div class="bsResult"><strong>Bs:</strong> <span><input class="editUser" type="text" value="${userSelected.company.bs}" ></span></div>
+            <div class="nameCompanyResult"><strong>Name:</strong> <span><input id="nameCompany${userSelected.id}" class="editUser" type="text" value="${userSelected.company.name}"></span> </div>
+            <div class="catchPhraseResult"><strong>CatchPhrase:</strong> <span><input id="catchPhrase${userSelected.id}" class="editUser" type="text" value="${userSelected.company.catchPhrase}"></span></div>
+            <div class="bsResult"><strong>Bs:</strong> <span><input id="bs${userSelected.id}" class="editUser" type="text" value="${userSelected.company.bs}" ></span></div>
              </div>
              </div>
              <br>
@@ -457,6 +457,16 @@ function aceptarChange(id, btn) {
       if (user.id === id) {
         user.name = document.getElementById("name" + user.id).value;
         user.username = document.getElementById("username" + user.id).value;
+        user.email = document.getElementById("email" + user.id).value;
+        user.street = document.getElementById("street" + user.id).value;
+        user.suite = document.getElementById("suite" + user.id).value;
+        user.city = document.getElementById("city" + user.id).value;
+        user.zipcode = document.getElementById("zipcode" + user.id).value;
+        user.phone = document.getElementById("phone" + user.id).value;
+        user.website = document.getElementById("website" + user.id).value;
+        user.nameCompany = document.getElementById("nameCompany" + user.id).value;
+        user.catchPhrase = document.getElementById("catchPhrase" + user.id).value;
+        user.bs = document.getElementById("bs" + user.id).value;
   
         console.log("user.name", user.name);
       }
