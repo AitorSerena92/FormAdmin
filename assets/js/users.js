@@ -458,15 +458,15 @@ function aceptarChange(id, btn) {
         user.name = document.getElementById("name" + user.id).value;
         user.username = document.getElementById("username" + user.id).value;
         user.email = document.getElementById("email" + user.id).value;
-        user.street = document.getElementById("street" + user.id).value;
-        user.suite = document.getElementById("suite" + user.id).value;
-        user.city = document.getElementById("city" + user.id).value;
-        user.zipcode = document.getElementById("zipcode" + user.id).value;
+        user.address.street = document.getElementById("street" + user.id).value;
+        user.address.suite = document.getElementById("suite" + user.id).value;
+        user.address.city = document.getElementById("city" + user.id).value;
+        user.address.zipcode = document.getElementById("zipcode" + user.id).value;
         user.phone = document.getElementById("phone" + user.id).value;
         user.website = document.getElementById("website" + user.id).value;
-        user.nameCompany = document.getElementById("nameCompany" + user.id).value;
-        user.catchPhrase = document.getElementById("catchPhrase" + user.id).value;
-        user.bs = document.getElementById("bs" + user.id).value;
+        user.company.nameCompany = document.getElementById("nameCompany" + user.id).value;
+        user.company.catchPhrase = document.getElementById("catchPhrase" + user.id).value;
+        user.company.bs = document.getElementById("bs" + user.id).value;
   
         console.log("user.name", user.name);
       }
