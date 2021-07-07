@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <title>Form User</title>
+  </head>
+  <body>
+    <!-- LOGIN USUARIOS -->
+
+    <section id="pageUser">
+      <form class="container-fluid formUser" id="formularioLogin">
+        <h2>Registered users</h2>
+        <div class="mb-3" id="grupoEmail">
+          <label for="email" class="form-label">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            name="email"
+            id="email"
+            aria-describedby="emailHelp"
+          />
+          <p class="formulario__input-error">
+            El email tiene que llevar @gmail.es o com
+          </p>
+        </div>
+        <div class="mb-3" id="grupoPassword">
+          <label for="password" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            name="password"
+            id="password"
+          />
+          <p class="formulario__input-error">
+            El password tiene que ser de 4 a 12 carácteres
+          </p>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="CheckValider" />
+          <label class="form-check-label" for="CheckValider"
+            >Check me out</label
+          >
+          <div class="formulario__mensaje" id="formulario__mensaje">
+            <p><b>Error:</b> Por favor rellena el formulario</p>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" id="submit">
+          Submit
+        </button>
+        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">
+          Formulario correcto
+        </p>
+      </form>
+    </section>
+
+  
+    <script src="assets/js/login.js"></script>
+    <script src="assets/js/users.js"></script>
+    <script src="assets/js/register.js"></script>
+
+    <script>
+     
+        
+        if (localStorage.getItem('login')) {
+          loadDoc("register");
+
+        } 
+   
+    </script>
+  </body>
+</html>

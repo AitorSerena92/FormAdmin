@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+  <title>Form Usseeeerssss</title>
+
+
+</head>
+<body>
+  
+
+       
+       
+       <div class="col-md-12" id="headerAdmin">
+        <h2>Welcome Admin!</h2>
+       </div>
+      </div>
+     
+      <section class="container-fluid formUser" >
+        <form class="row g-3">
+          <div class="col-sm-5" id="headerUsers">
+          <h2> All Users Register </h2>
+            </div>
+
+            <div class="col-7" id="containResult">
+              <p><input type="button" id="buttonResult" value="Show Result" onclick="showUsers()"> Click to see all users.</p>
+          
+          
+            </div>
+
+          <div class="col-12" id="userRegister">
+
+          </div>  
+         
+        </form>
+    </section>
+
+
+    <section id="newUser" class="container-fluid formUser formAddUsercontainResult" >
+      <form class="row g-3" id="newUsers">
+        <h2>Register new user
+        </h2>
+        <div class="col-md-4">
+            <label for="name" class="form-label" >Name</label>
+            <input type="text" class="form-control" id="newName" required>
+          </div>
+          <div class="col-md-4">
+            <label for="userName" class="form-label">UserName</label>
+            <input type="text" class="form-control"id="newUserName" required>
+          </div>
+          <div class="col-md-4">
+            <label for="email" class="form-label">Email</label>
+            <div class="input-group">
+              <input type="text" class="form-control" id="newEmail"  aria-describedby="inputGroupPrepend2" required>
+              <span class="input-group-text" id="inputGroupPrepend2">@gmail.com</span>
+            </div>
+
+          </div>
+          <div class="col-md-3">
+            <label for="street" class="form-label">Street</label>
+            <input type="text" class="form-control" id="newStreet" >
+          </div>
+          <div class="col-md-3">
+            <label for="suite" class="form-label">Suite</label>
+            <input type="text" class="form-control"id="newSuite" >
+          </div>
+          <div class="col-md-3">
+            <label for="city" class="form-label">City</label>
+            <input type="text" class="form-control" id="newCity" required>
+          </div>
+          <div class="col-md-3">
+            <label for="zipCode" class="form-label">ZipCode</label>
+            <input type="text" class="form-control" id="newZipCode" >
+          </div>
+
+          <div class="col-md-3">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="text" class="form-control"id="newPhone" required>
+          </div>
+          <div class="col-md-3">
+            <label for="website" class="form-label">Website</label>
+            <input type="text" class="form-control" id="newWebsite">
+          </div>
+          <div class="col-md-6">
+            <label for="nameCompany" class="form-label">Company</label>
+            <input type="text" class="form-control" id="newNameCompany">
+          </div>
+          <div class="col-md-6">
+            <label for="catchPhrase" class="form-label">CatchPhrase</label>
+            <input type="text" class="form-control" id="newCatchPhrase">
+          </div>
+          <div class="col-md-6">
+            <label for="bs" class="form-label">Bs</label>
+            <input type="text" class="form-control"id="newBs">
+          </div>
+          
+
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="checkUser" required>
+              <label class="form-check-label" for="checkUser">
+                <a href="terms.html" target="_blank" id="termsConditions"> Agree to terms and conditions </a>
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary" type="button" id="submitNew" onclick="saveUser()">Submit form</button>
+          </div>
+      </form>
+      <br>
+    </section>
+
+
+
+
+  </body>
+  </html>

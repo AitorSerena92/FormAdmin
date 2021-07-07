@@ -1,0 +1,136 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    
+}
+
+body{
+    font-size: 1.2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.formUser{
+    width: 70%;
+    margin-top: 2em;
+    background: rgba(180, 180, 180, 0.363);
+    padding: 1em;
+    border: 1px solid rgba(97, 97, 97, 0.466);
+}
+
+
+
+.formulario__grupo-incorrecto .form-label {
+    color: red;
+    
+}
+
+.formulario__grupo-incorrecto .form-control{
+    border: 1px solid red;
+}
+
+.formulario__grupo-correcto .form-label {
+    color: rgb(60, 197, 19);
+    
+}
+.formulario__grupo-correcto .form-control{
+    border: 1px solid rgb(60, 197, 19);
+}
+
+
+.formulario__input-error{
+    display: none;
+}
+
+.formulario__input-error-activo{
+    display: block;
+}
+
+.formulario__mensaje{
+    display: none;
+}
+
+.formulario__mensaje-activo{
+    background: rgba(255, 0, 0, 0.233);
+    padding: 0.1em;
+    color: rgb(148, 67, 67);
+    display: block;
+}
+
+.formulario__mensaje-exito{
+    display: none;
+}
+
+.formulario__mensaje-exito-activo{
+    background: rgba(58, 165, 44, 0.233);
+    padding: 0.1em;
+    color: rgb(41, 126, 30);
+    display: block;
+}
+
+
+#headerAdmin h2{
+    display: flex;
+    font-size: 2em;
+    justify-content: center;
+    font-weight: 600;
+    margin-top: 1em;
+}
+
+
+
+.listUsers{
+    margin: 0.3em;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    background: rgba(136, 136, 136, 0.432);
+}
+
+.listUsers h4{
+    font-weight: 600;
+    text-align: center;
+}
+.containResult-none {
+    display: none;
+}
+
+
+.id, .nameResult{
+    text-align: center;
+    margin: 0.2em;
+    margin-bottom: 0.4em;
+    font-size: 1.2em;
+}
+
+.buttonList{
+    display: block;
+    justify-content: center; 
+}
+
+.editUser{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (max-width: 900px) {
+    .formUser{
+        width: 98%;
+        font-size: 0.8em;
+        background: rgba(180, 180, 180, 0.363);
+        border: 1px solid rgba(97, 97, 97, 0.466);
+    }
+    .buttonList{
+        display: flex;
+        justify-content: center; 
+        margin: 0.5em;
+    }
+
+    .formUser form div h2{
+        text-align: center;
+        width: 100%;
+        font-size: 1.6em;
+        font-weight: 600;
+        color: rgba(43, 116, 189, 0.705);
+    }
+}
