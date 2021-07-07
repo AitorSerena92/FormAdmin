@@ -15,7 +15,7 @@ var userRegister = [
     photo:
       "https://previews.123rf.com/images/jackf/jackf1908/jackf190808406/129082800-office-worker-woman-is-working-at-a-computer-and-talking-by-headset-with-client-in-the-office.jpg",
     email: "mjose@gmail.com",
-    password: "1234",
+    password: "123456789",
     role: "admin",
   },
   {
@@ -41,6 +41,7 @@ const campos = {
   Password: false,
 };
 
+const SubmitAdmin = document.getElementById("submit");
 const formulario = document.getElementById("formularioLogin");
 const inputs = document.querySelectorAll("#formularioLogin input");
 
@@ -97,11 +98,11 @@ function loadDoc(params) {
   xhttp.send();
 }
 
-formulario.addEventListener("click", (e) => {
+SubmitAdmin.addEventListener("click", (e) => {
   e.preventDefault();
 
   const terminos = document.getElementById("CheckValider");
-  if (campos.Email && campos.Password && terminos.checked) {
+  if (campos.Email && campos.Password) {
     document
       .getElementById("formulario__mensaje-exito")
       .classList.add("formulario__mensaje-exito-activo");
