@@ -455,6 +455,7 @@ function aceptarChange(id, btn) {
     userComplete.find((user) => {
 
       if (user.id === id) {
+        console.log("queee da", user.address)
         user.name = document.getElementById("name" + user.id).value;
         user.username = document.getElementById("username" + user.id).value;
         user.email = document.getElementById("email" + user.id).value;
@@ -464,7 +465,7 @@ function aceptarChange(id, btn) {
         user.address.zipcode = document.getElementById("zipcode" + user.id).value;
         user.phone = document.getElementById("phone" + user.id).value;
         user.website = document.getElementById("website" + user.id).value;
-        user.company.nameCompany = document.getElementById("nameCompany" + user.id).value;
+        user.company.name = document.getElementById("nameCompany" + user.id).value;
         user.company.catchPhrase = document.getElementById("catchPhrase" + user.id).value;
         user.company.bs = document.getElementById("bs" + user.id).value;
   
